@@ -39,18 +39,17 @@ namespace DesignPatternsApp.CommandPatternModule
             {                
                 var pressedKey = Console.ReadKey().KeyChar.ToString();
 
-                if (int.TryParse(pressedKey, out int commandKey))
-                {
-                    var commandsToExecute = carCommands
-                        .Where(x => x.CommandCode == commandKey)
-                        .ToList();
-
-                    commandsToExecute.ForEach(x => x.Execute());
-                }
-                else
+                if (!int.TryParse(pressedKey, out int commandKey))
                 {
                     break;
                 }
+
+                var commandsToExecute = carCommands
+                    .Where(x => x.CommandCode == commandKey)
+                    .ToList();
+
+                commandsToExecute.ForEach(x => x.Execute());
+
             } while (true);            
         }
     }
