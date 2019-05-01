@@ -49,7 +49,7 @@ namespace DesignPatternsApp.CommandPatternModule
                     .ToList();
 
                 commandsToExecute.ForEach(x => x.Execute());
-
+              
             } while (true);            
         }
     }
