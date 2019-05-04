@@ -1,4 +1,5 @@
 ﻿using DesignPatternsApp.CommandPatternModule.Car;
+using DesignPatternsApp.UI.Imp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,15 @@ namespace DesignPatternsApp.CommandPatternModule
             var menuBuilder = new MenuBuilder();
             menuBuilder.ForOptions(menuOptions);
 
+            //Create a Second MenuBuilder
+            var secondMenuBuilder = new AnotherMenuBuilder();
+            secondMenuBuilder.ForOptions(menuOptions);
+            secondMenuBuilder.ForOptions(menuOptions);
+            secondMenuBuilder.ForOptions(menuOptions);
+
             //Create UIComponentBundle
             var uiComponentBundle = new UIComponentBundle(menuBuilder);
+            var secondUiComponentBundle = new UIComponentBundle(secondMenuBuilder);
 
             //Create Artist
             var artist = new Artist(uiComponentBundle);

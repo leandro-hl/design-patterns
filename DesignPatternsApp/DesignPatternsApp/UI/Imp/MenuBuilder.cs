@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DesignPatternsApp.UI;
+using System;
 using System.Collections.Generic;
 
 namespace DesignPatternsApp
 {
-    public class MenuBuilder
+    public class MenuBuilder : IMenuBuilder
     {
         private IList<MenuOption> menuOptions;
 
