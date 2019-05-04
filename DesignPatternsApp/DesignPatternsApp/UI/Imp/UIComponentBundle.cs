@@ -1,12 +1,13 @@
-﻿using System;
+﻿using DesignPatternsApp.UI;
+using System;
 
 namespace DesignPatternsApp
 {
-    public class UIComponentBundle
+    public class UIComponentBundle : IUIComponentBundle
     {
-        private readonly MenuBuilder menuBuilder;
+        private readonly IMenuBuilder menuBuilder;
 
-        public UIComponentBundle(MenuBuilder menuBuilder)
+        public UIComponentBundle(IMenuBuilder menuBuilder)
         {
             this.menuBuilder = menuBuilder;
         }

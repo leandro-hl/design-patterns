@@ -50,12 +50,15 @@
     <Compile Include="CommandPatternModule\CommandPatternProgram.cs" />
     <Compile Include="CommandPatternModule\ICommand.cs" />
     <Compile Include="CommandPatternModule\TransportCommand.cs" />
-    <Compile Include="MenuBuilder.cs" />
-    <Compile Include="MenuOption.cs" />
-    <Compile Include="MenuOptionMapper.cs" />
+    <Compile Include="UI\IMenuBuilder.cs" />
+    <Compile Include="UI\Imp\AnotherMenuBuilder.cs" />
+    <Compile Include="UI\Imp\MenuBuilder.cs" />
+    <Compile Include="UI\IUIComponentBundle.cs" />
+    <Compile Include="UI\ViewModel\MenuOption.cs" />
+    <Compile Include="UI\Imp\MenuOptionMapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UIComponentBundle.cs" />
+    <Compile Include="UI\Imp\UIComponentBundle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
