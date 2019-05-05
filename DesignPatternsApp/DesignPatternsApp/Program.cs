@@ -1,4 +1,5 @@
 using DesignPatternsApp.CommandPatternModule;
+using DesignPatternsApp.QueryObjectPatternModule;
 
 namespace DesignPatternsApp
 {
@@ -6,7 +7,8 @@ namespace DesignPatternsApp
     {
         private static void Main(string[] args)
         {
-            CommandPatternProgram.Init();
+            //CommandPatternProgram.Init();
+            QueryObjectPatternProgram.Init();
         }
     }
 }
