@@ -50,6 +50,17 @@
     <Compile Include="CommandPatternModule\CommandPatternProgram.cs" />
     <Compile Include="CommandPatternModule\ICommand.cs" />
     <Compile Include="CommandPatternModule\TransportCommand.cs" />
+    <Compile Include="QueryObjectPatternModule\ApproachOne\IDateExchangeCriteriaQueryObject.cs" />
+    <Compile Include="QueryObjectPatternModule\ApproachTwo\DateExchangeQueryObject.cs" />
+    <Compile Include="QueryObjectPatternModule\ApproachTwo\IExchangeQueryObject.cs" />
+    <Compile Include="QueryObjectPatternModule\Bitcoin\Exchange.cs" />
+    <Compile Include="QueryObjectPatternModule\Bitcoin\ExchangeRepository.cs" />
+    <Compile Include="QueryObjectPatternModule\ApproachOne\DateExchangeCriteriaQueryObject.cs" />
+    <Compile Include="QueryObjectPatternModule\ApproachTwo\IDateExchangeQueryObject.cs" />
+    <Compile Include="QueryObjectPatternModule\ApproachOne\IExchangeCriteria.cs" />
+    <Compile Include="QueryObjectPatternModule\IDateExchangeQueryObjectFilter.cs" />
+    <Compile Include="QueryObjectPatternModule\IQueryObjectReset.cs" />
+    <Compile Include="QueryObjectPatternModule\QueryObjectPatternProgram.cs" />
     <Compile Include="UI\IMenuBuilder.cs" />
     <Compile Include="UI\Imp\AnotherMenuBuilder.cs" />
     <Compile Include="UI\Imp\MenuBuilder.cs" />
